@@ -12,8 +12,11 @@ public class PrefixSum {
         for (int i = firstIndex ; i <= lastIndex ; i++) {
             sum += arr[i];
         }
+
         return sum;
     }
+
+
 
 
 

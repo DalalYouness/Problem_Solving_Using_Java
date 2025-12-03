@@ -42,5 +42,7 @@ public class FixedSlindingWindow {
         greatherSum = Math.max(greatherSum, sumWindow);
 
         System.out.println(greatherSum);
+
+
     }
 }
