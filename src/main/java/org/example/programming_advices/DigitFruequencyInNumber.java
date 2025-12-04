@@ -1,5 +1,10 @@
 package org.example.programming_advices;
 
+import java.math.BigDecimal;
+import java.text.NumberFormat;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class DigitFruequencyInNumber {
@@ -50,6 +55,21 @@ public class DigitFruequencyInNumber {
 
     public static void main(String[] args) {
 
-        System.out.println(digitFrequencyInNumber(readPositiveNumber(),readDigit()));
+        //System.out.println(digitFrequencyInNumber(readPositiveNumber(),readDigit()));
+
+
+//        LocalDate localDate = LocalDate.of(2020,05,22);
+//        DateTimeFormatter myPattern = DateTimeFormatter.ofPattern("yyyy MMMM EEEE");
+//        String date = myPattern.format(localDate);
+//        System.out.println(date);
+
+        String date = "2020 mai 02";
+        DateTimeFormatter myPattern = DateTimeFormatter.ofPattern("yyyy MMMM dd");
+        LocalDate mydate = LocalDate.parse(date,myPattern);
+        System.out.println(mydate);
+
+
+
+
     }
 }
