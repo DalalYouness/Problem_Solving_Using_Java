@@ -38,7 +38,6 @@ public class FixedSlindingWindow {
             sumWindow = sumWindow + numbers[i] - numbers[i - window];
         }
 
-        // مقارنة آخر نافذة
         greatherSum = Math.max(greatherSum, sumWindow);
 
         System.out.println(greatherSum);
